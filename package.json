@@ -3,8 +3,14 @@
   "displayName": "qalan-content-snippets",
   "description": "snippets for people who work in content team of qalan",
   "version": "0.0.1",
+  "icon": "./images/icon.png",
+  "publisher": "rekewka",
   "engines": {
     "vscode": "^1.102.0"
+  },
+  "galleryBanner": {
+    "color": "#F7F7F7",
+    "theme": "dark"
   },
   "categories": [
     "Other"
