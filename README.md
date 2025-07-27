@@ -1,65 +1,44 @@
-# qalan-content-snippets README
+# qalan-content-snippets
 
-This is the README for your extension "qalan-content-snippets". After writing up a brief description, we recommend including the following sections.
+VS Code extension providing code snippets for the Qalan content team.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension adds commands to quickly generate Elixir modules for different types of task descriptions and solutions. The following commands are available:
 
-For example if there is an image subfolder under your extension project workspace:
+- **Complex Description and Complex Solution snippet**
+- **Text Description and Text Solution snippet**
+- **Text Description and Complex Solution snippet**
+- **Complex Description and Text Solution snippet**
 
-\!\[feature X\]\(images/feature-x.png\)
+Each command prompts for the number of parameters and the module name, then inserts a pre-filled Elixir module at the cursor position.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+1. Press `F5` to launch a new VS Code window with the extension loaded.
+2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+3. Type the name of the snippet command you want to use (see above).
+4. Follow the prompts to generate your Elixir module.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Development
 
-## Extension Settings
+- Main extension code: [`extension.js`](extension.js)
+- Snippet code generator: [`snippet-codes.js`](snippet-codes.js)
+- Test suite: [`test/extension.test.js`](test/extension.test.js)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Scripts
 
-For example:
+- `pnpm run lint` — Lint the codebase with ESLint.
+- `pnpm test` — Run extension tests.
 
-This extension contributes the following settings:
+## Contributing
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Feel free to open issues or pull requests for improvements or bug fixes.
 
-## Known Issues
+## License
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+MIT
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**For more details,
