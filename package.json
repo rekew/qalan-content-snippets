@@ -2,7 +2,7 @@
   "name": "qalan-content-snippets",
   "displayName": "qalan-content-snippets",
   "description": "snippets for people who work in content team of qalan",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "./assets/qalan.icon.png",
   "publisher": "rekewka",
   "repository": {
