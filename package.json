@@ -5,6 +5,10 @@
   "version": "0.0.1",
   "icon": "./images/icon.png",
   "publisher": "rekewka",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rekew/qalan-content-snippets.git"
+  },
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -17,23 +21,24 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "qalan-content-snippets.complex_description_complex_solution",
-      "title": "Complex Description and Complex Solution snippet"
-    },
-    {
-      "command": "qalan-content-snippets.text_description_text_solution",
-      "title": "Text Description and Text Solution snippet"
-    },
-    {
-      "command": "qalan-content-snippets.text_description_complex_solution",
-      "title": "Text Description and Complex Solution snippet"
-    },
-    {
-      "command": "qalan-content-snippets.complex_description_text_solution",
-      "title": "Complex Description and Text Solution snippet"
-    }
-  ]
+    "commands": [
+      {
+        "command": "qalan-content-snippets.complex_description_complex_solution",
+        "title": "Complex Description and Complex Solution snippet"
+      },
+      {
+        "command": "qalan-content-snippets.text_description_text_solution",
+        "title": "Text Description and Text Solution snippet"
+      },
+      {
+        "command": "qalan-content-snippets.text_description_complex_solution",
+        "title": "Text Description and Complex Solution snippet"
+      },
+      {
+        "command": "qalan-content-snippets.complex_description_text_solution",
+        "title": "Complex Description and Text Solution snippet"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
