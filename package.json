@@ -1,0 +1,45 @@
+{
+  "name": "qalan-content-snippets",
+  "displayName": "qalan-content-snippets",
+  "description": "snippets for people who work in content team of qalan",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "qalan-content-snippets.complex_description_complex_solution",
+      "title": "Complex Description and Complex Solution snippet"
+    },
+    {
+      "command": "qalan-content-snippets.text_description_text_solution",
+      "title": "Text Description and Text Solution snippet"
+    },
+    {
+      "command": "qalan-content-snippets.text_description_complex_solution",
+      "title": "Text Description and Complex Solution snippet"
+    },
+    {
+      "command": "qalan-content-snippets.complex_description_text_solution",
+      "title": "Complex Description and Text Solution snippet"
+    }
+  ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "pnpm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.102.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
