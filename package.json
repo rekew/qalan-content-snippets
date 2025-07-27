@@ -2,7 +2,7 @@
   "name": "qalan-content-snippets",
   "displayName": "qalan-content-snippets",
   "description": "snippets for people who work in content team of qalan",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icon": "./assets/qalan.icon.png",
   "publisher": "rekewka",
   "repository": {
@@ -14,7 +14,7 @@
     "vscode": "^1.102.0"
   },
   "galleryBanner": {
-    "color": "##1E90FF"
+    "color": "#1E90FF"
   },
   "categories": [
     "Other"
